@@ -1,5 +1,5 @@
 {
-  "name": "@fui-components/core",
+  "name": "@aag",
   "version": "0.0.1",
   "private": true,
   "workspaces": [
@@ -7,7 +7,7 @@
   ],
   "scripts": {
     "bootstrap": "lerna bootstrap",
-    "publish": "lerna publish",
+    "lerna:publish": "lerna publish --skip-npm",
     "build:es": "lerna run --parallel build:es",
     "build:declarations": "lerna run --parallel build:declarations",
     "lint:typescript": "yarn eslint ./packages --ext .ts --ext .tsx",
@@ -47,7 +47,7 @@
   "husky": {
       "hooks": {
         "pre-commit": "bash release.sh",
-        "pre-push": "yarn publish",
+        "pre-push": "yarn lerna:publish",
         "...": "..."
       }
     }
