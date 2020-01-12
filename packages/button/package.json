@@ -1,0 +1,11 @@
+{
+  "version": "0.0.0",
+  "name": "@fui-components/button",
+  "private": true,
+  "main": "lib/index.js",
+  "scripts": {
+    "build:es": "BABEL_ENV=build babel src --root-mode upward --out-dir lib --source-maps --extensions .ts,.tsx --delete-dir-on-start --no-comments",
+    "build:declarations": "tsc --project tsconfig.build.json",
+    "build": "yarn build:es && yarn build:declarations"
+  }
+}

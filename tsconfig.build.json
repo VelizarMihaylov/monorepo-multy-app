@@ -1,0 +1,13 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "noEmit": false,
+    "emitDeclarationOnly": true,
+    "declaration": true,
+    "paths": {
+      "@fui-components/*": ["./node-modules/@fui-components/*/src"]
+    }
+  },
+  "exclude": ["**/*.story.*", "**/*.test.*", "lib"],
+  "include": []
+}

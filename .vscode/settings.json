@@ -1,0 +1,84 @@
+{
+  "jest.pathToJest": "yarn test",
+  "jest.restartJestOnSnapshotUpdate": true,
+  "jest.enableSnapshotUpdateMessages": true,
+  "editor.formatOnSave": false,
+  "[javascript]": {
+    "editor.formatOnSave": false,
+  },
+  "[typescript]": {
+    "editor.formatOnSave": false,
+  },
+  "eslint.options": {
+    "extensinons": [
+      ".ts",
+      ".js",
+      ".tsx",
+      ".jsx"
+    ]
+  },
+  "stylelint.enable": true,
+  "stylelint.config": {
+    "rules": {
+      "block-no-empty": null,
+      "color-no-invalid-hex": true,
+      "comment-empty-line-before": [
+        "always",
+        {
+          "ignore": [
+            "stylelint-commands",
+            "after-comment"
+          ]
+        }
+      ],
+      "declaration-colon-space-after": "always",
+      "indentation": [
+        2,
+        {
+          "except": [
+            "value"
+          ]
+        }
+      ],
+      "max-empty-lines": 2,
+      "rule-empty-line-before": [
+        "always",
+        {
+          "except": [
+            "first-nested"
+          ],
+          "ignore": [
+            "after-comment"
+          ]
+        }
+      ],
+      "unit-whitelist": [
+        "vh",
+        "vmin",
+        "em",
+        "rem",
+        "deg",
+        "%",
+        "s",
+      ]
+    }
+  },
+  "cSpell.words": [
+    "Interop",
+    "Openqa",
+    "api",
+    "app",
+    "corejs",
+    "end",
+    "esnext",
+    "graphql",
+    "mihaylv",
+    "mixins",
+    "openaq",
+    "point",
+    "react"
+  ],
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  }
+}
